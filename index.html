@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>3D Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+<div id="ui-overlay">
+    <div id="score-display">
+        <span><span class="label">SCORE</span> <span class="value" id="score">0</span></span>
+        <span><span class="high-label">BEST</span> <span class="high-value" id="high-score">0</span></span>
+    </div>
+
+    <div id="start-screen">
+        <h1>🐍 <span>3D</span> SNAKE</h1>
+        <p>Navigate the cube and eat the orbs to grow!</p>
+        <div class="keys">Arrow Keys / WASD / Swipe</div>
+        <button id="start-btn">PLAY</button>
+    </div>
+
+    <div id="game-over">
+        <h1>GAME OVER</h1>
+        <div class="final-score">Score: <span id="final-score">0</span></div>
+        <button id="restart-btn">PLAY AGAIN</button>
+    </div>
+
+    <div id="controls-hint">← ↑ → ↓ &nbsp;&nbsp;·&nbsp;&nbsp; W A S D</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
